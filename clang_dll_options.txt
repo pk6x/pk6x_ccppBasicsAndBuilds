@@ -1,0 +1,34 @@
+// clang-cl
+
+ /imsvc <dir>            Add directory to system include search path, as if part of %INCLUDE%
+
+  /I <dir>                Add directory to include search path
+
+  /J                      Make char type unsigned
+
+  /LDd                    Create debug DLL
+
+  /LD                     Create DLL
+
+  /link <options>         Forward options to the linker
+
+  /MDd                    Use DLL debug run-time
+
+  /MD                     Use DLL run-time
+
+  /MTd                    Use static debug run-time
+
+  /MT                     Use static run-time
+
+/Zc:dllexportInlines-   Don't dllexport/dllimport inline member functions of dllexport/import classes
+
+/Zc:dllexportInlines    dllexport/dllimport inline member functions of dllexport/import classes (default)
+
+// clang
+
+-D<macro>=<value>, --define-macro <arg>, --define-macro=<arg>¶
+Define <macro> to <value> (or 1 if <value> omitted)
+
+clang++ -c FileA.cpp -----> This will compile and assemble but not link
+
+clang++ -shared -o FileA.dll FileA.o -------> This will spit application.dll + applicatoin.lib
